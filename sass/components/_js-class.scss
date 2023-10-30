@@ -1,0 +1,14 @@
+.show_result{
+    display: block;
+}
+
+.show_off{
+    display: none;
+}
+.active{
+    cursor: pointer;
+    &:hover{
+        background-color: var(--White);
+        color: var(--Orange);
+    }
+}

@@ -1,0 +1,12 @@
+.container{
+    min-width: 420px;
+    height: 421.1px;
+    background: linear-gradient(to bottom, var(--Dark-Blue),var(--Very-Dark-Blue));
+    background: linear-gradient(to top,rgb(24,30,39),rgb(32,39,49));
+    padding: 30px;
+    border-radius: 1.5rem;
+    max-width: 420px;
+    @media (max-width:440px) {
+        min-width:375px ;
+    }
+}

@@ -1,0 +1,22 @@
+.container{
+    &__btn{
+        button{
+            width: 100%;
+            background-color: var(--Orange);
+            border: none;
+            outline: none;
+            opacity: 0.4;
+            color: var(--White);
+            padding: 13px;
+            border-radius: 30px;
+            letter-spacing: 2.5px;
+            font-size: 16px;
+            transition: 0.3s;
+            font-weight: 700;
+
+
+        }
+    }
+}
+
+

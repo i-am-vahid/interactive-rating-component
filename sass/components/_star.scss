@@ -1,0 +1,14 @@
+.container{
+    &__star{
+        padding: 15px;
+        border-radius: 50%;
+        background-color:var(--Dark-Blue) ;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+        img {
+            width: 1.6rem;
+        }
+    }
+}

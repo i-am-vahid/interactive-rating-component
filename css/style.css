@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+img, svg, picture {
+  display: block;
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+main {
+  background-color: var(--Very-Dark-Blue);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 440px) {
+  main {
+    padding: 0 1rem;
+  }
+}
+
+.container {
+  min-width: 420px;
+  height: 421.1px;
+  background: linear-gradient(to bottom, var(--Dark-Blue), var(--Very-Dark-Blue));
+  background: linear-gradient(to top, rgb(24, 30, 39), rgb(32, 39, 49));
+  padding: 30px;
+  border-radius: 1.5rem;
+  max-width: 420px;
+}
+@media (max-width: 440px) {
+  .container {
+    min-width: 375px;
+  }
+}
+
+.container__star {
+  padding: 15px;
+  border-radius: 50%;
+  background-color: var(--Dark-Blue);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.container__star img {
+  width: 1.6rem;
+}
+
+.container__titel {
+  color: var(--White);
+  margin-bottom: 0.5rem;
+  font-size: 25px;
+}
+.container__par {
+  color: var(--Light-Grey);
+  margin-bottom: 2rem;
+}
+
+.container__score {
+  margin-bottom: 2rem;
+  color: white;
+}
+.container__score form {
+  display: flex;
+  justify-content: space-between;
+}
+.container__score form label {
+  position: relative;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--Dark-Blue);
+  color: var(--Medium-Grey);
+  transition: 0.4s;
+  font-weight: 700;
+  z-index: 10;
+}
+.container__score form label:hover, .container__score form label:focus {
+  background-color: var(--Orange);
+  color: var(--White);
+}
+.container__score form input {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  z-index: -1;
+  cursor: pointer;
+}
+.container__score form input:hover {
+  background-color: var(--Orange);
+}
+.container__score form input:checked {
+  background-color: var(--Light-Grey);
+}
+.container__score form input:checked + span {
+  color: var(--White);
+}
+.container__score form span {
+  z-index: 2;
+}
+
+.container__btn button {
+  width: 100%;
+  background-color: var(--Orange);
+  border: none;
+  outline: none;
+  opacity: 0.4;
+  color: var(--White);
+  padding: 13px;
+  border-radius: 30px;
+  letter-spacing: 2.5px;
+  font-size: 16px;
+  transition: 0.3s;
+  font-weight: 700;
+}
+
+.container__result {
+  display: none;
+  text-align: center;
+  transition: 0.6s;
+}
+.container__result--pic {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.container__result--titel {
+  color: var(--White);
+  margin-bottom: 2rem;
+}
+.container__result--score {
+  margin-bottom: 2rem;
+  background-color: var(--Dark-Blue);
+  display: inline-block;
+  padding: 8px 10px;
+  border-radius: 40px;
+  color: var(--Orange);
+}
+.container__result--par {
+  line-height: 25px;
+  color: var(--Light-Grey);
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+.attribution a, .attribution a:visited, .attribution a:active {
+  color: var(--Orange);
+}
+
+.show_result {
+  display: block;
+}
+
+.show_off {
+  display: none;
+}
+
+.active {
+  cursor: pointer;
+}
+.active:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+}/*# sourceMappingURL=style.css.map */
